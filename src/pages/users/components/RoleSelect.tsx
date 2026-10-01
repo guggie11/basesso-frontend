@@ -31,11 +31,11 @@ export function RoleSelect({ roles, value, onChange, disabled }: RoleSelectProps
             checked={value.includes(role.id)}
             onChange={() => toggle(role.id)}
             disabled={disabled}
-            className="h-4 w-4 rounded border-gray-300 text-[#D94F3D] focus:ring-[#D94F3D]"
+            className="h-4 w-4 rounded border-gray-300 text-[var(--color-primary)] focus:ring-[var(--color-primary)]"
           />
           <span className="text-sm text-gray-700">{role.name}</span>
           {role.is_system && (
-            <span className="ml-auto text-xs text-[#D94F3D] font-medium">system</span>
+            <span className="ml-auto text-xs text-[var(--color-primary)] font-medium">system</span>
           )}
         </label>
       ))}
